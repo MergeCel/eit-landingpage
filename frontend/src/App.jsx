@@ -11,6 +11,14 @@ export default function App() {
   const firstRender = useRef(true)
 
   useEffect(() => {
+    const preventImageDrag = (e) => {
+      if (e.target.tagName === 'IMG') e.preventDefault()
+    }
+    document.addEventListener('dragstart', preventImageDrag)
+    return () => document.removeEventListener('dragstart', preventImageDrag)
+  }, [])
+
+  useEffect(() => {
     if (firstRender.current) {
       firstRender.current = false
       return
@@ -20,7 +28,7 @@ export default function App() {
     setVisible(true)
     const t = setTimeout(() => {
       setDisplayed(location)
-      window.scrollTo(0, 0)
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
       setVisible(false)
     }, 1050)
     return () => clearTimeout(t)

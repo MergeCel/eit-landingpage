@@ -3,9 +3,9 @@ import { useReveal } from '../hooks/useReveal'
 import { PRODUCTS } from '../data/products'
 
 export default function PortfolioList() {
-  const spark = useReveal()
-  const head = useReveal(100)
-  const grid = useReveal(200)
+  const spark = useReveal(0, 0.3)
+  const head = useReveal(100, 0.3)
+  const grid = useReveal(200, 0.3)
 
   return (
     <section className="portfolio" id="work">

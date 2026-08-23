@@ -8,7 +8,7 @@ import './product.css'
 export default function ProductDetail() {
   const { slug } = useParams()
   const product = PRODUCTS.find((p) => p.slug === slug)
-  const reveal = useReveal(100)
+  const reveal = useReveal(100, 0.2)
 
   if (!product) {
     return (
