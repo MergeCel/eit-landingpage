@@ -2,7 +2,7 @@ import { useReveal } from '../hooks/useReveal'
 import { PRODUCTS } from '../data/products'
 
 export default function PortfolioItem({ item, index }) {
-  const reveal = useReveal(index * 0.15)
+  const reveal = useReveal(index * 150, 0.2)
   const side = index % 2 === 0 ? '--left' : '--right'
   const product = PRODUCTS.find((p) => p.slug === item?.slug) ?? PRODUCTS[index]
   const name = product?.title ?? item?.name

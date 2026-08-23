@@ -4,8 +4,8 @@ import { PRODUCTS } from '../data/products'
 
 export default function PortfolioList() {
   const spark = useReveal(0, 0.3)
-  const head = useReveal(100, 0.3)
-  const grid = useReveal(200, 0.3)
+  const head = useReveal(0, 0.3)
+  const grid = useReveal(0, 0.3)
 
   return (
     <section className="portfolio" id="work">
@@ -20,7 +20,7 @@ export default function PortfolioList() {
           .selected-projects {
             width: 100%;
             margin: 0;
-            padding: 1vh 0 10vh;
+            padding: 1vh 20px 10vh;
             background-color: var(--color-cream);
             display: flex;
             flex-direction: row;

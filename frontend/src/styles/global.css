@@ -908,9 +908,9 @@ a {
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(28px, 2.5vw, 40px);
   width: 100%;
-  max-width: min(1900px, 100%);
-  margin: 0 auto;
-  padding: 0 clamp(12px, 2vw, 32px);
+  max-width: none;
+  margin: 0;
+  padding: 0 5px;
 }
 
 .project-card__link {
