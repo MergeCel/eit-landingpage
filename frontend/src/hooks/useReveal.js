@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-export function useReveal(delay = 0) {
+export function useReveal(delay = 0, threshold = 0.8) {
   const ref = useRef(null)
 
   useEffect(() => {
@@ -14,12 +14,12 @@ export function useReveal(delay = 0) {
           observer.unobserve(el)
         }
       },
-      { threshold: 0.2 }
+      { threshold }
     )
 
     observer.observe(el)
     return () => observer.disconnect()
-  }, [delay])
+  }, [delay, threshold])
 
   return ref
 }
