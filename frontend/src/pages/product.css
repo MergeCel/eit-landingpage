@@ -1,0 +1,116 @@
+.product-detail {
+  padding: 20vh 2vw 0;
+  background-color: var(--color-cream);
+}
+
+.product-detail--missing {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.product-detail__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  color: var(--color-black);
+  font-size: clamp(2.5rem, 8vw, 3rem);
+  line-height: 1;
+  text-transform: none;
+  margin-bottom: 32px;
+}
+
+.product-detail__hero,
+.product-detail__gallery {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.product-detail__hero {
+  aspect-ratio: 1472 / 549;
+  object-fit: contain;
+}
+
+.product-detail__gallery {
+  aspect-ratio: 1472 / 764;
+  object-fit: contain;
+}
+
+.product-detail__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0 24px;
+}
+
+.product-detail__num {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: var(--color-black);
+}
+
+.product-detail__num--second {
+  display: block;
+  margin: 8px 0 32px;
+}
+
+.product-detail__body {
+  max-width: 100%;
+  margin: clamp(72px, 12vh, 160px) 0;
+  padding-right: clamp(48px, 14vw, 240px);
+}
+
+.product-detail__text {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-transform: none;
+  color: var(--color-black);
+}
+
+.product-detail__text + .product-detail__text {
+  margin-top: 1.1em;
+}
+
+.product-detail__tag {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: none;
+  color: var(--color-black);
+}
+
+.product-detail__tag::before {
+  content: '[';
+}
+
+.product-detail__tag::after {
+  content: ']';
+}
+
+.product-detail__back {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: none;
+  color: var(--color-black);
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .product-detail {
+    padding: 16vh 20px 0;
+  }
+  .product-detail__title {
+    font-size: clamp(2rem, 11vw, 6rem);
+    margin-bottom: 24px;
+  }
+  .product-detail__text {
+    font-size: 0.95rem;
+  }
+}

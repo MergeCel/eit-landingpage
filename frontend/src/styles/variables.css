@@ -1,0 +1,10 @@
+:root {
+  --color-primary-blue: #286de6;
+  --color-cream: #f3f0e9;
+  --color-black: #000000;
+  --color-accent-blue: #0188fe;
+
+  --font-display: 'Zen Dots', monospace;
+  --font-body: 'Inter', sans-serif;
+  --tracking-wide: 0.04em;
+}
