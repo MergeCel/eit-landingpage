@@ -3,8 +3,10 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import ProductDetail from './pages/ProductDetail'
+import { useSlowScroll, scrollTopImmediate } from './hooks/useSlowScroll'
 
 export default function App() {
+  useSlowScroll()
   const location = useLocation()
   const [displayed, setDisplayed] = useState(location)
   const [visible, setVisible] = useState(false)
@@ -28,7 +30,7 @@ export default function App() {
     setVisible(true)
     const t = setTimeout(() => {
       setDisplayed(location)
-      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+      scrollTopImmediate()
       setVisible(false)
     }, 1050)
     return () => clearTimeout(t)
