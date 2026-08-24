@@ -101,10 +101,14 @@ a {
   background-color: var(--color-primary-blue);
   color: #ffffff;
 }
+.navbar--hero::before {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
 
 /* Mode 2: sudah lewat hero -> latar cream + blur */
 .navbar--scrolled {
-  background-color: rgba(243, 240, 233, 0.38);
+  background-color: rgba(243, 240, 233, 0.92);
   color: var(--color-black);
 }
 
@@ -267,7 +271,7 @@ a {
   width: 2px;
   height: 45vh;
   min-height: 340px;
-  margin: 16vh auto;
+  margin: 24vh auto 16vh;
   background-color: var(--color-black);
   transform: scaleY(0);
   transform-origin: top;
@@ -490,7 +494,7 @@ a {
   position: relative;
   margin-left: clamp(10px, 3vw, 20px);
   font-family: var(--font-display);
-  font-size: clamp(0.8rem, 1.4vw, 32px);
+  font-size: clamp(0.9rem, 1.9vw, 40px);
   font-weight: 400;
   line-height: 1;
   color: #ffffff;
@@ -531,7 +535,7 @@ a {
 .footer__mail {
   margin-right: clamp(10px, 3vw, 20px);
   font-family: var(--font-display);
-  font-size: clamp(0.8rem, 1.4vw, 32px);
+  font-size: clamp(0.9rem, 1.9vw, 40px);
   line-height: 1;
   color: #ffffff;
   text-transform: none;
