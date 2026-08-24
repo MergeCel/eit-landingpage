@@ -20,7 +20,7 @@ export default function PortfolioList() {
           .selected-projects {
             width: 100%;
             margin: 0;
-            padding: 1vh 20px 10vh;
+            padding: 1vh 4px 10vh;
             background-color: var(--color-cream);
             display: flex;
             flex-direction: row;
@@ -37,23 +37,25 @@ export default function PortfolioList() {
             padding-left: 0;
             text-align: left;
             white-space: nowrap;
+            text-transform: none;
           }
           .selected-projects__desc {
             font-family: var(--font-body);
             color: var(--color-black);
             font-size: 0.75rem;
             line-height: 1.5;
-            max-width: 32%;
-            margin: 0;
-            padding-right: 0;
+            max-width: 45%;
+            margin: 0 0 0 20px;
+            padding-right: 0px;
             text-align: left;
+            text-transform: none;
           }
           @media (max-width: 720px) {
             .selected-projects {
               flex-direction: column;
               align-items: flex-start;
               gap: 16px;
-              padding: 6vh 20px 8vh;
+              padding: 6vh 6px 8vh;
             }
             .selected-projects__heading {
               white-space: normal;

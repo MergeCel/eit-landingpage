@@ -74,8 +74,8 @@ export default function Navbar() {
   }
 
   const goWork = (e) => {
+    e.preventDefault()
     if (pathname === '/') {
-      e.preventDefault()
       document
         .getElementById('work')
         ?.scrollIntoView({ behavior: 'smooth' })

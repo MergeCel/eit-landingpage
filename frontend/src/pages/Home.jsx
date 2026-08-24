@@ -13,9 +13,11 @@ export default function Home() {
 
   useEffect(() => {
     if (location.state?.scrollTo === 'work') {
-      const el = document.getElementById('work')
-      if (el) el.scrollIntoView({ behavior: 'smooth' })
-      window.history.replaceState({}, '')
+      requestAnimationFrame(() => {
+        const el = document.getElementById('work')
+        if (el) el.scrollIntoView({ behavior: 'auto' })
+        window.history.replaceState({}, '')
+      })
     }
   }, [location.state])
 
