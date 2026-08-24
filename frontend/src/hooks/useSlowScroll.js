@@ -11,7 +11,7 @@ export function scrollTopImmediate() {
   }
 }
 
-export function useSlowScroll({ duration = 1.6 } = {}) {
+export function useSlowScroll({ duration = 0.5 } = {}) {
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       return

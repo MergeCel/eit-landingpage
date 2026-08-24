@@ -2,14 +2,14 @@ import { useState } from 'react'
 import { useReveal } from '../hooks/useReveal'
 
 const MEMBERS = [
-  { src: '/assets/foto1.svg', name: 'Timothy Walukow', role: 'Project Manager', quote: 'makan untuk hidup' },
-  { src: '/assets/foto2.svg', name: 'Marcello Chrisdiantoro', role: 'Programmer', quote: 'Fokus pada progres, bukan validasi.' },
-  { src: '/assets/foto3.svg', name: 'Florecita Wenny', role: 'Marketing', quote: 'Quote 03 here.' },
-  { src: '/assets/foto4.svg', name: 'Aurellya Yocelyn Prasista', role: 'Quality Assurance (QA)', quote: 'it`s fine to fake it `til you make it `til you do `til it`s true.' },
-  { src: '/assets/foto5.svg', name: 'Kharizma Rizkiah', role: 'UI/UX Designer', quote: 'Quote 05 here.' },
-  { src: '/assets/foto6.svg', name: 'Raden Aliyah Panji Anom', role: 'System Analyst', quote: 'Don\'t stop exist, live with purpose' },
-  { src: '/assets/foto7.svg', name: 'Kayla Naomy Nataya', role: 'System Analyst', quote: 'Live life to the fullest' },
-  { src: '/assets/foto8.svg', name: 'Dzaky Mubarak', role: 'System Analyst', quote: 'Quote 08 here.' },
+  { src: '/assets/foto1.png', name: 'Timothy Walukow', role: 'Project Manager', quote: 'makan untuk hidup' },
+  { src: '/assets/foto2.png', name: 'Marcello Chrisdiantoro', role: 'Programmer', quote: 'Fokus pada progres, bukan validasi.' },
+  { src: '/assets/foto3.png', name: 'Florecita Wenny', role: 'Marketing', quote: 'Quote 03 here.' },
+  { src: '/assets/foto4.png', name: 'Aurellya Yocelyn Prasista', role: 'Quality Assurance (QA)', quote: 'it`s fine to fake it `til you make it `til you do `til it`s true.' },
+  { src: '/assets/foto5.png', name: 'Kharizma Rizkiah', role: 'UI/UX Designer', quote: 'Quote 05 here.' },
+  { src: '/assets/foto6.png', name: 'Raden Aliyah Panji Anom', role: 'System Analyst', quote: 'Don\'t stop exist, live with purpose' },
+  { src: '/assets/foto7.png', name: 'Kayla Naomy Nataya', role: 'System Analyst', quote: 'Live life to the fullest' },
+  { src: '/assets/foto8.png', name: 'Dzaky Mubarak', role: 'System Analyst', quote: 'Quote 08 here.' },
 ]
 
 export default function AboutUs() {
@@ -42,7 +42,7 @@ export default function AboutUs() {
         <div className="squad-grid">
           <div className="squad-cell squad-cell--1">
             <img
-              src="/assets/foto1.svg"
+              src="/assets/foto1.png"
               alt="Team member 01"
               className="squad-photo squad-photo--1"
               onClick={() => setSelectedMember(MEMBERS[0])}
@@ -59,7 +59,7 @@ export default function AboutUs() {
           </div>
           <div className="squad-cell squad-cell--2">
             <img
-              src="/assets/foto2.svg"
+              src="/assets/foto2.png"
               alt="Team member 02"
               className="squad-photo squad-photo--2"
               onClick={() => setSelectedMember(MEMBERS[1])}
@@ -68,7 +68,7 @@ export default function AboutUs() {
           </div>
           <div className="squad-cell squad-cell--3">
             <img
-              src="/assets/foto3.svg"
+              src="/assets/foto3.png"
               alt="Team member 03"
               className="squad-photo squad-photo--3"
               onClick={() => setSelectedMember(MEMBERS[2])}
@@ -77,7 +77,7 @@ export default function AboutUs() {
           </div>
           <div className="squad-cell squad-cell--4">
             <img
-              src="/assets/foto4.svg"
+              src="/assets/foto4.png"
               alt="Team member 04"
               className="squad-photo squad-photo--4"
               onClick={() => setSelectedMember(MEMBERS[3])}
@@ -86,7 +86,7 @@ export default function AboutUs() {
           </div>
           <div className="squad-cell squad-cell--5">
             <img
-              src="/assets/foto5.svg"
+              src="/assets/foto5.png"
               alt="Team member 05"
               className="squad-photo squad-photo--5"
               onClick={() => setSelectedMember(MEMBERS[4])}
@@ -95,7 +95,7 @@ export default function AboutUs() {
           </div>
           <div className="squad-cell squad-cell--6">
             <img
-              src="/assets/foto6.svg"
+              src="/assets/foto6.png"
               alt="Team member 06"
               className="squad-photo squad-photo--6"
               onClick={() => setSelectedMember(MEMBERS[5])}
@@ -104,7 +104,7 @@ export default function AboutUs() {
           </div>
           <div className="squad-cell squad-cell--7">
             <img
-              src="/assets/foto7.svg"
+              src="/assets/foto7.png"
               alt="Team member 07"
               className="squad-photo squad-photo--7"
               onClick={() => setSelectedMember(MEMBERS[6])}
@@ -113,7 +113,7 @@ export default function AboutUs() {
           </div>
           <div className="squad-cell squad-cell--8">
             <img
-              src="/assets/foto8.svg"
+              src="/assets/foto8.png"
               alt="Team member 08"
               className="squad-photo squad-photo--8"
               onClick={() => setSelectedMember(MEMBERS[7])}
