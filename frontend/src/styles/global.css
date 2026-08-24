@@ -92,8 +92,8 @@ a {
   position: absolute;
   inset: 0;
   z-index: -1;
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 /* Mode 1: di atas hero -> biru transparan + blur, warna tetap biru hero */
@@ -102,9 +102,9 @@ a {
   color: #ffffff;
 }
 
-/* Mode 2: sudah lewat hero -> latar cream + blur */
+/* Mode 2: sudah lewat hero -> latar cream semi transparan + blur */
 .navbar--scrolled {
-  background-color: rgba(243, 240, 233, 0.92);
+  background-color: rgba(243, 240, 233, 0.65);
   color: var(--color-black);
 }
 
@@ -199,8 +199,8 @@ a {
     gap: 8px;
     padding: 16px 48px 24px;
     background-color: inherit;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
     transform: translateY(-12px);
     opacity: 0;
     visibility: hidden;
