@@ -3,7 +3,7 @@ export const PRODUCTS = [
     slug: 'warungmart',
     title: 'WarungMart',
     tag: 'Shop',
-    src: '/assets/products/product1.svg',
+    src: '/assets/products/product1.png',
     heroImage: '/assets/products/product1h.png',
     galleryImage: '/assets/products/product1p.svg',
     description: [
@@ -14,7 +14,7 @@ export const PRODUCTS = [
     slug: 'simatok',
     title: 'Sistem Manajemen Toko (SIMATOK)',
     tag: 'IMS',
-    src: '/assets/products/product2.svg',
+    src: '/assets/products/product2.png',
     heroImage: '/assets/products/product2h.png',
     galleryImage: '/assets/products/product2p.svg',
     description: [
@@ -25,7 +25,7 @@ export const PRODUCTS = [
     slug: 'glicoo',
     title: 'Glicoo',
     tag: 'Digital Health',
-    src: '/assets/products/product3.svg',
+    src: '/assets/products/product3.png',
     heroImage: '/assets/products/product3h.png',
     galleryImage: '/assets/products/product3p.svg',
     description: [
@@ -36,7 +36,7 @@ export const PRODUCTS = [
     slug: 'symphony',
     title: 'Symphony (Redesign)',
     tag: 'Web Profile',
-    src: '/assets/products/product4.svg',
+    src: '/assets/products/product4.png',
     heroImage: '/assets/products/product4h.png',
     galleryImage: '/assets/products/product4p.svg',
     description: [

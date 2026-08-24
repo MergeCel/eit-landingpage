@@ -82,9 +82,18 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 16px clamp(20px, 4vw, 20px);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Blur ditaruh di ::before agar .navbar tidak menjadi backdrop root,
+   sehingga backdrop-filter pada .navbar__menu (mobile) tetap berfungsi */
+.navbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   backdrop-filter: blur(28px) saturate(140%);
   -webkit-backdrop-filter: blur(28px) saturate(140%);
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Mode 1: di atas hero -> biru sama persis dengan hero */
@@ -300,10 +309,12 @@ a {
   justify-content: space-between;
 }
 .heading__mission {
+  display: inline-block;
   font-family: var(--font-body);
   color: var(--color-black);
   font-size: 0.3em;
   letter-spacing: 0.02em;
+  transform: translateY(-38px);
 }
 .heading__word {
   display: inline-block;
@@ -477,12 +488,13 @@ a {
 }
 .footer__link {
   position: relative;
-  margin-left: 20px;
+  margin-left: clamp(10px, 3vw, 20px);
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: clamp(0.8rem, 1.4vw, 32px);
   font-weight: 400;
   line-height: 1;
   color: #ffffff;
+  white-space: nowrap;
   opacity: 0;
   transition: opacity 5s ease;
 }
@@ -493,16 +505,17 @@ a {
   display: inline-block;
   vertical-align: middle;
   width: 0;
-  height: 32px;
+  height: 1.3em;
   margin-left: 0;
   opacity: 0;
   pointer-events: none;
   transition: width 0.3s ease, margin-left 0.3s ease, opacity 0.3s ease;
+  padding-bottom: 0.1em;
 }
 .footer__link:hover .footer__star,
 .footer__link:focus-visible .footer__star {
-  width: 44px;
-  margin-left: 12px;
+  width: 1.3em;
+  margin-left: 0.4em;
   opacity: 1;
 }
 .footer__line {
@@ -516,12 +529,13 @@ a {
   opacity: 1;
 }
 .footer__mail {
-  margin-right: 20px;
+  margin-right: clamp(10px, 3vw, 20px);
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: clamp(0.8rem, 1.4vw, 32px);
   line-height: 1;
   color: #ffffff;
   text-transform: none;
+  white-space: nowrap;
   opacity: 0;
   transition: opacity 5s ease;
 }
@@ -531,13 +545,8 @@ a {
 
 @media (max-width: 720px) {
   .footer__bar {
-    bottom: 24px;
+    bottom: 10px;
     gap: 10px;
-  }
-  .footer__link,
-  .footer__mail {
-    font-size: clamp(0.85rem, 4vw, 32px);
-    white-space: nowrap;
   }
 }
 
@@ -551,7 +560,7 @@ a {
   justify-content: center;
   gap: clamp(12px, 2.5vw, 32px);
   min-height: min(620px, 96vh);
-  padding: clamp(100px, 13vh, 140px) clamp(16px, 4vw, 48px);
+  padding: clamp(100px, 13vh, 140px) clamp(16px, 4vw, 20px);
   background-color: var(--color-cream);
   margin-bottom: clamp(60px, 8vh, 110px);
 }
@@ -936,7 +945,7 @@ a {
 .project-card__title {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 1.05rem;
+  font-size: 1.4rem;
   line-height: 1;
   margin: 14px 0 6px;
   text-transform: none;
@@ -946,12 +955,13 @@ a {
   display: inline-block;
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 0.7rem;
+  font-size: 1.4rem;
   letter-spacing: 0.06em;
-  padding: 4px 12px;
+  padding: 4px 5px;
   border: 1px solid currentColor;
   border-radius: 999px;
   text-transform: none;
+  margin-top:10px;
 }
 
 @media (max-width: 900px) {
@@ -1021,6 +1031,9 @@ a {
   .divider {
     height: 38vh;
     min-height: 260px;
+  }
+  .footer__bar {
+    bottom: 12px;
   }
 }
 
