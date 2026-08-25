@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="hero" id="home" ref={reveal}>
       <img src="/assets/hero.svg" alt="eit" className="hero__title" />
       <img
-        src="/assets/heroflower.svg"
+        src="/assets/heroflower.png"
         alt=""
         className="hero__flower"
         aria-hidden="true"
