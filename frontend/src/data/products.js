@@ -3,6 +3,7 @@ export const PRODUCTS = [
     slug: 'warungmart',
     title: 'WarungMart',
     tag: 'Shop',
+    link: 'https://warung-mart-client.vercel.app/',
     src: '/assets/products/product1.png',
     heroImage: '/assets/products/product1h.png',
     galleryImage: '/assets/products/product1p.svg',
