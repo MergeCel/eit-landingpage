@@ -75,7 +75,13 @@ export default function PortfolioList() {
           >
             <Link to={`/work/${product.slug}`} className="project-card__link">
               <div className="project-card__media">
-                <img src={product.src} alt={product.title} loading="lazy" />
+                {product.link ? (
+                  <a href={product.link} target="_blank" rel="noreferrer">
+                    <img src={product.src} alt={product.title} loading="lazy" />
+                  </a>
+                ) : (
+                  <img src={product.src} alt={product.title} loading="lazy" />
+                )}
               </div>
               <h3 className="project-card__title">{product.title}</h3>
               <span className="project-card__tag">{product.tag}</span>

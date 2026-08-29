@@ -33,12 +33,28 @@ export default function ProductDetail() {
       <main className="product-detail reveal" ref={reveal}>
         <h1 className="product-detail__title">{product.title}</h1>
 
-        <img
-          className="product-detail__hero"
-          src={product.heroImage}
-          alt={`${product.title} hero`}
-          loading="lazy"
-        />
+        {product.link ? (
+          <a
+            className="product-detail__hero-link"
+            href={product.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="product-detail__hero"
+              src={product.heroImage}
+              alt={`${product.title} hero`}
+              loading="lazy"
+            />
+          </a>
+        ) : (
+          <img
+            className="product-detail__hero"
+            src={product.heroImage}
+            alt={`${product.title} hero`}
+            loading="lazy"
+          />
+        )}
 
         <div className="product-detail__meta">
           <span className="product-detail__num">[01]</span>
