@@ -31,6 +31,15 @@
   margin-bottom: 24px;
 }
 
+.product-detail__hero-link {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.product-detail__hero-link .product-detail__hero {
+  margin-bottom: 0;
+}
+
 .product-detail__hero {
   aspect-ratio: 1472 / 549;
   object-fit: contain;
