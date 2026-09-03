@@ -26,6 +26,7 @@ export const PRODUCTS = [
     slug: 'glicoo',
     title: 'Glicoo',
     tag: 'Digital Health',
+    link: 'https://www.glicoo.my.id/',
     src: '/assets/products/product3.png',
     heroImage: '/assets/products/product3h.png',
     galleryImage: '/assets/products/product3p.svg',
